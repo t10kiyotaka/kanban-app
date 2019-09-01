@@ -16,7 +16,7 @@ module.exports = function karmaConfig (config) {
     reporters: ['spec', 'coverage'],
     files: [
       '../../node_modules/es6-promise/dist/es6-promise.auto.js',
-      '.index.js'
+      './index.js'
     ],
     preprocessors: {
       './index.js': ['webpack', 'sourcemap']
@@ -31,6 +31,7 @@ module.exports = function karmaConfig (config) {
         { type: 'lcov', subdir: '.' },
         { type: 'text-summary' }
       ]
-    }
+    },
+    failOnEmptyTestSuite: false
   })
 }

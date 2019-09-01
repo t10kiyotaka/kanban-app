@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import KbnButton from '@/components/atooms/KbnButton'
+import KbnButton from '@/components/atoms/KbnButton'
 
 describe('KbnButton', () => {
   describe('property', () => {
