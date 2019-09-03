@@ -45,7 +45,7 @@ describe('KbnLoginForm', () => {
       })
     })
 
-    descrive('password', () => {
+    describe('password', () => {
       describe('required', () => {
         describe('Nothing is entered', () => {
           it('validation.password.required is invalid', () => {
@@ -63,5 +63,5 @@ describe('KbnLoginForm', () => {
       })
     })
   })
-  
+
 })
