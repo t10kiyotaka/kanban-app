@@ -1,14 +1,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import KbnBoardView from '@/components/template/KbnBoardView'
+import router from './routes'
+import { authorizeToken } from './guards'
 
 Vue.use(Router)
 
-export default new Router({
-  routes: [
-    {
-      path: '/',
-      component: KbnBoardView
-    }
-  ]
-})
+const router = new Router({ routes })
+router.beforeEach(autorizeToken)
+
+export default router
