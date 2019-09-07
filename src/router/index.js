@@ -1,11 +1,13 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import router from './routes'
+import routes from './routes'
 import { authorizeToken } from './guards'
 
 Vue.use(Router)
 
 const router = new Router({ routes })
-router.beforeEach(autorizeToken)
+router.beforeEach(authorizeToken)
 
 export default router
+
+

@@ -3,7 +3,7 @@
     :class="classes"
     :disabled="disabled"
     type="button"
-    @click-"handleClick"
+    @click="handleClick"
   >
     <slot />
   </button>

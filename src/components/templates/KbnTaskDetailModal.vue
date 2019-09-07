@@ -1,1 +1,3 @@
-<template>\n <p>Task detail page</p>\n</template>
+<template>
+  <p>Task detail page</p>
+</template>

@@ -1,1 +1,3 @@
-<template>\n <p>Board page</p>\n</template>
+<template>
+  <p>Board page</p>
+</templates>
