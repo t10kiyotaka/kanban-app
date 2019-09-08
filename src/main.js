@@ -12,6 +12,12 @@ Vue.config.productionTip = false
 // Install ErrorBoundary component
 Vue.component(ErrorBoundary.name, ErrorBoundary)
 
+Vue.config.errorHandler = (err, vm, info) => {
+  console.error('errorHandler err: ', err)
+  console.error('errorHandler vm: ', vm)
+  console.error('errorHandler info: ', info)
+}
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
